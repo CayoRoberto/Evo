@@ -1,0 +1,18 @@
+.horaDeComecar__descricao {
+    color: #220F71;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    height: 46px;
+    line-height: 23px;
+    margin: 0 auto;
+    margin-top: 29px;
+    text-align: center;
+    width: 70%;
+}
+
+@media screen and (max-width: 400px) {
+    .horaDeComecar__descricao {
+        text-align: center;
+    }
+}

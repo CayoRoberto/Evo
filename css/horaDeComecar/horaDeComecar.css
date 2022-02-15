@@ -1,0 +1,10 @@
+.horaDeComecar {
+    clear:both;
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+

@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none;
+}
+
+header {
+    padding: 0; /*espaçamento pra cima e pra baixo*/
+    display: flex;
+    align-items: center;
+ }
+
+ .cabeçalho {
+     display: flex;
+     flex-direction: row; /*direção na horizontal*/
+     align-items: center; /*menu do cabeçalho alinhando no centro da logo*/
+     justify-content: space-between; /*espaçamento entre os menus do cabeçalho*/
+     padding: 15px;
+ }
+
+ .logo-cabeçalho {
+     height: 94px;
+     position: relative;
+     width: 30%;
+ }
+
+ .cabeçalho_inicio {
+     width: 100%;
+ }
+
+ /* .cabeçalho-menu {
+     display: flex;
+     gap: 40px;
+     flex-direction: row; /*direção na horizontal*/
+     /* align-items: center; menu do cabeçalho alinhando no centro da logo */
+     /* justify-content: space-around; espaçamento entre os menus do cabeçalho */
+     /* padding: 0px; */
+ /* }  */
+
+ /* .cabeçalho-menu-item {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 354px;
+    font-size: 20px;
+} */
+
+.cabeçalho-menu-item-botão {
+    background-color: #5E96EC;
+    Width: 230px;
+    Height: 50px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .5s ease all; 
+    transition: background 1s;
+    
+    
+}
+
+.cabeçalho-menu-item-botão:hover { 
+    background: #1961cc ;
+}
+
+.cabeçalho-inicio {
+    display: flex;
+    flex-direction: row; /*disposição na horizontal*/
+    align-items: center;
+    transition: .3s ease all;
+    margin-top: 100px;
+}
+
+.cabeçalho_inicio_escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /*da espaço entre os elementos*/
+    margin: 10px 90px;
+    padding: 0;
+    transition: .5s ease all;
+    max-width: 400px;
+    margin-top: 40px;
+    line-height: 30px;
+    
+}
+
+.cabeçalho_inicio_escrito_titulo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 43px;
+    color: #150035;
+    line-height: 50px;
+    margin-top: -10px;
+    
+}
+
+.cabeçalho_inicio_escrito_subtitulo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #150035;
+    width: 529px;
+    height: 120px;
+    max-width: 400px;
+}
+
+.cabeçalho_inicio_botao {
+    background-color: #5E96EC;
+    Width: 230px;
+    Height: 52px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .5s ease all;
+    transition: 0.5s ease-out all;
+    padding: 10px 24px;
+    transition: background 1s;
+}
+
+.cabeçalho_inicio_botao:hover {
+    background: #1961cc ;
+}
+
+.cabeçalho_inicio_imagem {
+    background: url(../../img/evolução-pokemon.svg) no-repeat center / contain;
+    display: block;
+    margin-left: auto;
+    width: 650px;
+    height: 384px;
+    justify-self: right;
+    margin-top: -340px;
+    margin-right: 50px;
+    z-index: -1;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float{
+    0%, 100% {
+ transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3.5rem);
+        z-index: -1;
+    }
+}
+
+.cabeçalho_sobre {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cabeçalho_voceSabe {
+    width: 50%;
+}
+
+.cabeçalho_descricao {
+    width: 50%;
+    background-image: url("../../img/fundoAzul.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_sobre_mercado:hover {
+    transform: translateY(-30px);
+}
+.cabeçalho_paragrafos {
+    width: 70%;
+    height: auto;
+}
+
+.cabeçalho_textoSobre {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #FFFFFF;
+   
+}
+
+.cabeçalho_citaçaoSobre {
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1130px) {
+    .cabeçalho_textoSobre {
+        font-size: 16px;
+    }
+
+    .cabeçalho_citaçaoSobre {
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (max-width: 990px) {
+    .cabeçalho_textoSobre {
+        font-size: 14px;
+    }
+
+    .cabeçalho_citaçaoSobre {
+        position: relative;
+        bottom: 15px;
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width:767px){
+    .logo-cabeçalho{
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 738px) {
+    .cabeçalho_sobre {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cabeçalho_voceSabe {
+        width: 100%;
+    }
+
+    .cabeçalho_descricao {
+        width: 99%;
+        height: 400px;
+        background-size: cover;
+        align-self: flex-end;
+    }
+
+    .cabeçalho_textoSobre {
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        color: #FFFFFF;
+       
+    }
+    
+    .cabeçalho_citaçaoSobre {
+        margin-top: 20px;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cabeçalho_descricao {
+        align-items: flex-end;
+    }
+    
+
+    .cabeçalho_paragrafos {
+        width: 70%;
+        height: auto;
+    }
+
+    .cabeçalho_textoSobre {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        color: #FFFFFF;
+       
+    }
+    
+    .cabeçalho_citaçaoSobre {
+        margin-top: 20px;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .cabeçalho_textoSobre {
+        font-size: 15.1px;
+    }
+    
+    .cabeçalho_citaçaoSobre {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+}
